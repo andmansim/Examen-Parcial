@@ -13,5 +13,12 @@ player_2_list = list(player_2)
 
 vowels = ['A']
 consonant = ['B', 'N']
-if player_1_list[0] == vowels[0]:
-    
+while player_1_list[0] == vowels[0]:
+    print("Player 1:")
+    player_1 = str(input())
+    player_1_list = list(player_1)
+    for x in player_1_list:
+        a = player_1_list.count('A')
+        points = a * 3
+        n = player_1_list.count('N')
+        points = n * 3
