@@ -97,6 +97,17 @@ elif player1_column == 2:
 for x in board:
     print(" ".join(x))
 
-while board[player1_new_line][y] != board[player2_new_line][y]:
+# fichero
+f = open('HackerChess.txt', 'a')
+f.write("Player 2" + '\n')
+for x in range (0,3):
+    for y in range(0,3):
+        if y == 2:
+            f.write(str(board[x][y] + '\n'))
+        else:
+            f.write(str(board[x][y] + '\t'))
+f.close()
+
+
     
     
