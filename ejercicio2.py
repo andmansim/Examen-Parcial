@@ -36,3 +36,16 @@ for x in range (0,3):
             f.write(str(board[x][y] + '\t'))
 f.close()
 
+print("Player 1 are the red rooks and player 2 the green ones.")
+print("Player 1: choose the rook that you want to move. By saying the line and de colum where it is, remember that the lines and colums go from 0 to 2")
+print("Line of the piece:")
+player1_line = int(input())
+print("Column of the piece:")
+player1_culmn = int(input())
+print("New line of the piece:")
+player1_new_line = int(input())
+print("New column of the piece:")
+player1_new_column = int(input())
+
+
+        

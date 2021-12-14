@@ -1,2 +1,4 @@
 HackerChess
-R	G	G	 	R	R	G	 	 	
+R	G	G
+ 	R	R
+G	 	 
