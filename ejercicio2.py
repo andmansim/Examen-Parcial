@@ -36,5 +36,3 @@ for x in range (0,3):
             f.write(str(board[x][y] + '\t'))
 f.close()
 
-print("Usuary put here a name for your file: ")
-usuary = str(input())
