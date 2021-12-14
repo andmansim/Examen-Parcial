@@ -35,6 +35,18 @@ for x in range (0,3):
         else:
             f.write(str(board[x][y] + '\t'))
 f.close()
+
+# Funtion file
+def addfile():
+    f= open('HackerChess.txt', 'a')
+    f.write("HackerChess" + '\n')
+    for x in range (0,3):
+        for y in range(0,3):
+            if y == 2:
+                f.write(str(board[x][y] + '\n'))
+            else:
+                f.write(str(board[x][y] + '\t'))
+    f.close()
 # Player 1
 print("Player 1 are the red rooks and player 2 the green ones.")
 print("Player 1: choose the rook that you want to move. By saying the line and column where it is, remember that the lines and columns go from 0 to 2")
@@ -61,16 +73,7 @@ elif player1_column == 2:
 for x in board:
     print(" ".join(x))
 
-# fichero
-f = open('HackerChess.txt', 'a')
-f.write("Player1" + '\n')
-for x in range (0,3):
-    for y in range(0,3):
-        if y == 2:
-            f.write(str(board[x][y] + '\n'))
-        else:
-            f.write(str(board[x][y] + '\t'))
-f.close()
+addfile()
     
 #Jugador 2
 print("Player 2: choose the rook that you want to move. By saying the line and column where it is, remember that the lines and columns go from 0 to 2")
@@ -98,16 +101,7 @@ for x in board:
     print(" ".join(x))
 
 # fichero
-f = open('HackerChess.txt', 'a')
-f.write("Player 2" + '\n')
-for x in range (0,3):
-    for y in range(0,3):
-        if y == 2:
-            f.write(str(board[x][y] + '\n'))
-        else:
-            f.write(str(board[x][y] + '\t'))
-f.close()
-
+addfile()
 
     
     

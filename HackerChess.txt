@@ -2,11 +2,11 @@ HackerChess
 R	G	G
  	R	R
 G	 	 
-Player1
+HackerChess
  	G	G
 R	R	R
 G	 	 
-Player 2
+HackerChess
  	G	G
 R	R	R
 G	 	 
