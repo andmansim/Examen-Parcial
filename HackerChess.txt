@@ -6,7 +6,3 @@ HackerChess
  	G	G
 R	R	R
 G	 	 
-HackerChess
- 	G	G
-R	R	R
-G	 	 

@@ -74,32 +74,30 @@ for x in board:
     print(" ".join(x))
 
 addfile()
-    
-#Jugador 2
-print("Player 2: choose the rook that you want to move. By saying the line and column where it is, remember that the lines and columns go from 0 to 2")
-print("Line of the piece:")
-player2_line = int(input())
-print("Column of the piece:")
-player2_column = int(input())
-print("New line of the piece:")
-player2_new_line = int(input())
+def player_2():  
+    #Jugador 2
+    player2_line = int(input())
+    print("Column of the piece:")
+    player2_column = int(input())
+    print("New line of the piece:")
+    player2_new_line = int(input())
 
 
-if player2_column == 0:
-    y = 0
-    board[player2_new_line][y] = board[player2_line][y]
-    board[player2_line][y] = " "
-elif player1_column == 1:
-    y = 1
-    board[player2_new_line][y] = board[player2_line][y]
-    board[player2_line][y] = " "
-elif player1_column == 2:
-    y = 2
-    board[player2_new_line][y] = board[player2_line][y]
-    board[player2_line][y] = " "
-for x in board:
-    print(" ".join(x))
-
+    if player2_column == 0:
+        y = 0
+        board[player2_new_line][y] = board[player2_line][y]
+        board[player2_line][y] = " "
+    elif player2_column == 1:
+        y = 1
+        board[player2_new_line][y] = board[player2_line][y]
+        board[player2_line][y] = " "
+    elif player2_column == 2:
+        y = 2
+        board[player2_new_line][y] = board[player2_line][y]
+        board[player2_line][y] = " "
+    for x in board:
+        print(" ".join(x))
+player_2()
 # fichero
 addfile()
 
