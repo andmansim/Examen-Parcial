@@ -2,23 +2,37 @@
 print("The word is 'BANANA'")
 initial_word = list('BANANA')
 print(initial_word)
+vowels = ['A']
+consonant = ['B', 'N']
 print("Player 1 have to make words started by vowels")
 print("Player 2 have to make words started by consonant")
 print("Player 1:")
 player_1 = str(input())
-print("Player 2:")
-player_2 = str(input())
 player_1_list = list(player_1)
-player_2_list = list(player_2)
 
-vowels = ['A']
-consonant = ['B', 'N']
-while player_1_list[0] == vowels[0]:
+
+
+if player_1_list[0] == vowels[0]:
     print("Player 1:")
     player_1 = str(input())
     player_1_list = list(player_1)
-    for x in player_1_list:
+    print("Have you finished?: Y/N")
+    user = str(input())
+    while user == 'Y':
+        print("Player 1:")
+        player_1 = str(input())
+        player_1_list = list(player_1)
+        print("Have you finished?: Y/N")
+        user = str(input())
+    if user != 'Y':
         a = player_1_list.count('A')
         points = a * 3
         n = player_1_list.count('N')
-        points = n * 3
+        points1 = n * 3
+        total_points_1 = points1 + points
+        print("Total points player 1:")
+        print(total_points_1)
+
+print("Player 2:")
+player_2 = str(input())
+player_2_list = list(player_2)
