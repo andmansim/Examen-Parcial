@@ -87,7 +87,7 @@ while user == 'Y':
     print("New line of the piece:")
     player2_new_line = int(input())
 
-
+    
     if player2_column == 0:
         y = 0
         board[player2_new_line][y] = board[player2_line][y]
