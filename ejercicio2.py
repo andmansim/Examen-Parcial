@@ -24,3 +24,17 @@ boardcreation()
 
 for x in board:
     print("  ".join(x))
+
+# fichero
+f = open('HackerChess.txt', 'w')
+f.write("HackerChess" + '\n')
+for x in range (0,3):
+    for y in range(0,3):
+        if y == 3:
+            f.write(str(board[x][y] + '\n'))
+        else:
+            f.write(str(board[x][y] + '\t'))
+f.close()
+
+print("Usuary put here a name for your file: ")
+usuary = str(input())
