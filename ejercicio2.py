@@ -30,7 +30,7 @@ f = open('HackerChess.txt', 'w')
 f.write("HackerChess" + '\n')
 for x in range (0,3):
     for y in range(0,3):
-        if y == 3:
+        if y == 2:
             f.write(str(board[x][y] + '\n'))
         else:
             f.write(str(board[x][y] + '\t'))
