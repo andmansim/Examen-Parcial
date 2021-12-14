@@ -10,8 +10,6 @@ print("Player 1:")
 player_1 = str(input())
 player_1_list = list(player_1)
 
-
-
 if player_1_list[0] == vowels[0]:
     print("Player 1:")
     player_1 = str(input())
@@ -36,3 +34,24 @@ if player_1_list[0] == vowels[0]:
 print("Player 2:")
 player_2 = str(input())
 player_2_list = list(player_2)
+
+if player_2_list[0] == consonant[0]:
+    print("Player 2:")
+    player_2 = str(input())
+    player_2_list = list(player_1)
+    print("Have you finished?: Y/N")
+    user = str(input())
+    while user == 'Y':
+        print("Player 2:")
+        player_2 = str(input())
+        player_2_list = list(player_2)
+        print("Have you finished?: Y/N")
+        user = str(input())
+    if user != 'Y':
+        a = player_2_list.count('A')
+        points2 = a * 3
+        n = player_2_list.count('N')
+        points3 = n * 3
+        total_points_2 = points2 + points3
+        print("Total points player 2:")
+        print(total_points_2)
